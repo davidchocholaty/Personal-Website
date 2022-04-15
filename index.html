@@ -1,0 +1,290 @@
+<!--
+    - Soubor: index.html
+    - Popis: Hlavni HTML dokument webove stranky.
+    - Datum: 2021-03-26
+    - Autor: David Chocholaty
+    - Verze: 1.0
+    - Projekt: Projekt 2, predmet ITW
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>David Chocholaty</title>
+        <meta name="description" content="David Chocholatý - Programmer and bassist from Czech Republic." />
+        <meta name="keywords" content="bass coding aim of destiny vinařství mělnický košt" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Import fontu -->          
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+        <!-- Import ikon -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">  
+        <link rel="stylesheet" href="./files/font-mfizz/font-mfizz.css">
+
+        <!-- Import stylovych predpisu css -->
+
+        <!-- Sekce webu -->
+        <link rel="stylesheet" href="./files/css/main.css">       
+        <link rel="stylesheet" href="./files/css/menu.css">      
+        <link rel="stylesheet" href="./files/css/home.css">              
+        <link rel="stylesheet" href="./files/css/about.css"> 
+        <link rel="stylesheet" href="./files/css/education.css"> 
+        <link rel="stylesheet" href="./files/css/skills.css"> 
+        <link rel="stylesheet" href="./files/css/hobbies.css"> 
+        <link rel="stylesheet" href="./files/css/books.css"> 
+        <link rel="stylesheet" href="./files/css/footer.css"> 
+        
+        <!-- Dodatecne css predpisy -->
+        <link rel="stylesheet" href="./files/css/animation.css">  
+        <link rel="stylesheet" href="./files/css/scroll_animation.css">  
+
+    </head>
+    <body class="body">    
+
+        <!-- Menu a sekce Home -->            
+        <header id="home">           
+            <div id="container">     
+                <div id="title">
+                    <h1>Hey, I'm</h1>
+                    <!-- Pri zmene umisteni webovych stranek bude prepsana hodnota href. -->
+                    <h1 id="name"><a href="http://www.davidchocholaty.com/">David Chocholatý</a></h1>                    
+                </div>  
+                <div id="sticky-menu" class="navigation">
+                    <div class="ham-btn" onclick="switchNav()">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="links">
+                      <div class="link" onclick="switchNav()"><a href="#home">Home</a></div>
+                      <div class="link" onclick="switchNav()"><a href="#about-sec">About</a></div>
+                      <div class="link" onclick="switchNav()"><a href="#edu-sec">Education</a></div>
+                      <div class="link" onclick="switchNav()"><a href="#skills-sec">Skills</a></div>
+                      <div class="link" onclick="switchNav()"><a href="#hobbies-sec">Hobbies</a></div>
+                      <div class="link" onclick="switchNav()"><a href="#books-sec">Books</a></div>
+                      <div class="link" onclick="switchNav()"><a href="#contact-sec">Contact</a></div>
+                    </div>
+                </div>                                         
+            </div>  
+        </header>                                              
+        <div class="arrow">            
+            <span></span>
+            <span></span>  
+        </div>
+
+        <!-- Sekce About -->
+        <section id="about-sec">
+            <div class="about">                             
+                <div id="about-fst-col" class="column js-scroll slide-left">
+                    <img src="./files/images/about.jpg" alt="David Chocholaty picture">
+                </div>              
+                <div id="about-sec-col" class="column js-scroll slide-right">                
+                    <h2>About</h2> 
+                    <p>
+                        Hi, I'm David Chocholatý. I was born in 2000. My passion is coding, music and improving myself as a human. The view which I have is that good things take time and that success is about hard work with a little luck. I'm open-minded to new things and ideas, just scroll down and contact me. Have a nice day.
+                    </p>
+                    <p>
+                        David
+                    </p>
+                </div>                  
+            </div>   
+        </section>        
+        
+        <!-- Sekce Education -->
+        <section id="edu-sec">
+            <div class="education">                             
+                <div id="edu-fst-col" class="column js-scroll slide-right">
+                    <img src="./files/images/fit.jpg" alt="Faculty of Information Technology BUT">
+                </div>              
+                <div id="edu-sec-col" class="column js-scroll slide-left">                
+                    <h2>Education</h2> 
+                    <div class="edu-item">
+                        <h3>SŠ PTA Jihlava, Information Technology</h3>
+                        <p class="years">
+                            2016-2020
+                        </p>
+                        <p>
+                            I gained valuable experiences here, especially great basis in math, coding, algorithmic thinking, computer networks and awesome background in electronics. Experiences with Microsoft Office package are very useful too. All of these skills are very helpful at university and every part of knowledge is putting together like a puzzle.
+                        </p>    
+                    </div>     
+                    <div class="edu-item">
+                        <h3>Faculty of Information Technology BUT</h3>
+                        <p class="years">
+                            2020 - present
+                        </p>
+                        <p>
+                            Nowadays I study at the Faculty of Information Technology BUT and I continue in gaining other skills and knowledge in IT field.
+                        </p>    
+                    </div>     
+                    <div class="edu-item">
+                        <h3>Elementary Art School Polná</h3>
+                        <p class="years">
+                            2006 - 2020
+                        </p>
+                        <p>
+                            <i><b>"Where words fail, music speaks."</b></i>
+                        </p>
+                        <p class="quote">
+                            <i>Hans Christian Andersen</i>
+                        </p>
+                        <p>
+                            As a child I started play recorder. Then I continued with clarinet and later I add bass. Here I learned the best things which are useful in every part of my life. Just for example regular exercise, play, diligence and cognition that exercising makes a master and that behind every success is hard work. I had the opportunity appearing in front of people in many places and in different situations.
+                        </p>    
+                    </div>                
+                </div>                  
+            </div>    
+        </section>        
+        
+        <!-- Sekce Skills -->
+        <section id="skills-sec">
+            <div class="skills">                                                      
+                <div>                
+                    <h2 id="skills-title" class="js-scroll fade-in">Skills</h2> 
+                    <p id="skills-par" class="js-scroll fade-in-bottom">
+                        Here is the list of some of my skills in programming languages and similar technical stuff. I started coding in Java and then I add other languages. Nowadays I have the greatest experience with "C-type" languages. In the future I would like to learn more programming languages (add some functional too) and expand my scope.
+                    </p>                    
+                </div>
+                <div class="code-langs">
+                    <i id="icon-1" class="fab fa-html5 js-scroll fade-in"></i>
+                    <i id="icon-2" class="fab fa-css3-alt js-scroll fade-in"></i>
+                    <i id="icon-3" class="fab fa-js-square js-scroll fade-in"></i>
+                    <i id="icon-4" class="icon-c js-scroll fade-in"></i>
+                    <i id="icon-5" class="icon-cplusplus js-scroll fade-in"></i>
+                    <i id="icon-6" class="fab fa-python js-scroll fade-in"></i>
+                    <i id="icon-7" class="fab fa-java js-scroll fade-in"></i>
+                    <i id="icon-8" class="fab fa-php js-scroll fade-in"></i>
+                    <i id="icon-9" class="icon-mysql js-scroll fade-in"></i> 
+                    <i id="icon-10" class="fab fa-git-alt js-scroll fade-in"></i>
+                    <i id="icon-11" class="fas fa-terminal js-scroll fade-in"></i>
+                    <i id="icon-12" class="icon-script js-scroll fade-in"></i>
+                    <i id="icon-13" class="icon-ubuntu js-scroll fade-in"></i>
+                </div>                  
+            </div>       
+        </section>
+
+        <!-- Sekce Hobbies -->
+        <section id="hobbies-sec">
+            <div class="hobbies">                                         
+                <div>                
+                    <h2 id="hobbies-title" class="js-scroll fade-in">Hobbies</h2> 
+                    <div class="hobbies-links">
+                        <div class="link js-scroll fade-in-bottom"><span><a href="#hobby-fst">Bass</a></span></div>
+                        <div class="link js-scroll fade-in-bottom"><span><a href="#hobby-sec">Band</a></span></div>
+                        <div class="link js-scroll fade-in-bottom"><span><a href="#hobby-trd">Coding</a></span></div>
+                        <div class="link js-scroll fade-in-bottom"><span><a href="#hobby-fth">Fishing</a></span></div>                        
+                    </div>   
+                    <div id="hobby-fst" class="hobby">
+                        <div id="fst-col-fst" class="column js-scroll slide-left">
+                            <img src="./files/images/bass.jpg" alt="Bass picture">
+                        </div>     
+                        <div id="fst-col-sec" class="column js-scroll slide-right">
+                            <h3>Bass</h3>
+                            <p>
+                                I play bass since I was twelve. Bass and music is my passion in free time. I took lectures by the best of Czech bassists Marek Leždík (Support Lesbiens) and Marek Bero who plays in England. I'm the bassist in jazz band Himbeere Brombeere, hard rock band Aim of Destiny and for DIA. female singer. I concentrate on solo playing with a lot of technicall stuff too.
+                            </p>    
+                        </div>                             
+                    </div>                        
+                    <div id="hobby-sec" class="hobby">
+                        <div id="sec-col-fst" class="column js-scroll slide-right">
+                            <img src="./files/images/band.jpg" alt="Band picture">
+                        </div>     
+                        <div id="sec-col-sec" class="column js-scroll slide-left">
+                            <h3>Band</h3>
+                            <p>
+                                Let me introduce our band Aim of Destiny. We are hard rock/metalcore band originating from the middle of Czech Republic. Check out our youtube channel, facebook or website.
+                            </p>    
+                        </div>                             
+                    </div>   
+                    <div id="hobby-trd" class="hobby">
+                        <div id="trd-col-fst" class="column js-scroll slide-left">
+                            <img src="./files/images/coding.jpg" alt="Coding picture">
+                        </div>     
+                        <div id="trd-col-sec" class="column js-scroll slide-right">
+                            <h3>Coding</h3>
+                            <p>
+                                <i><b>"Everyone should learn how to program a computer, because it teaches you how to think."</b></i>
+                            </p>
+                            <p class="quote">
+                                <i>Steve Jobs</i>
+                            </p>
+                            <p>
+                                I love part of coding when is necessarily algorithmic and mathematic thinking. In my free time I practise on Leetcode and Codeforces. At the university I do lots of school projects which are very helpful at getting better at coding because you learn just by doing. I try to do my own projects too.
+                            </p>    
+                        </div>                             
+                    </div>    
+                    
+                    <div id="hobby-fth" class="hobby">
+                        <div id="fth-col-fst" class="column js-scroll slide-right">
+                            <img src="./files/images/fishing.jpg" alt="Fishing picture">
+                        </div>     
+                        <div id="fth-col-sec" class="column js-scroll slide-left">
+                            <h3>Fishing</h3>
+                            <p>
+                                <i><b>"Time spent on fish does not count towards life."</b></i>
+                            </p>
+                            <p class="quote">
+                                <i>ancient, wise Assyrian proverb</i>
+                            </p>
+                            <p>
+                                In today's fast-pace world isn't something better than just slow down in nature with rods in water. My personal record is carp over 50lb. Fishing is just about, you know, that if something doesn't work, you need to change something and do it differently than before.
+                            </p>    
+                        </div>                             
+                    </div>   
+                </div>                  
+            </div>   
+        </section>   
+        
+        <!-- Sekce Books -->        
+        <section id="books-sec">
+            <div class="books">                                                                                    
+                <h2 id="books-title" class="js-scroll fade-in">Top 5 Books</h2>   
+                <i class="fas fa-book"></i>              
+                <ul>                    
+                    <li class="js-scroll fade-in-bottom">How to Win Friends and Influence People - Dale Carnegie</li>                    
+                    <li class="js-scroll fade-in-bottom">How to Stop Worrying and Start Living - Dale Carnegie</li>
+                    <li class="js-scroll fade-in-bottom">The 7 habits of highly effective people - Stephen R. Covey</li>    
+                    <li class="js-scroll fade-in-bottom">The Power of Habit - Charles Duhigg</li>  
+                    <li class="js-scroll fade-in-bottom">Steve Jobs - Walter Isaacson</li>                                                      
+                </ul>                           
+            </div>       
+        </section>
+        
+        <!-- Paticka -->
+        <footer>
+            <h2 class="js-scroll fade-in">Thank you for visiting my website <i class="far fa-smile-beam"></i></h2>            
+            <div class="footer-links">
+                <div class="link js-scroll fade-in-bottom"><a href="#home">Home</a></div>
+                <div class="link js-scroll fade-in-bottom"><a href="#about-sec">About</a></div>
+                <div class="link js-scroll fade-in-bottom"><a href="#edu-sec">Education</a></div>
+                <div class="link js-scroll fade-in-bottom"><a href="#skills-sec">Skills</a></div>
+                <div class="link js-scroll fade-in-bottom"><a href="#hobbies-sec">Hobbies</a></div>
+                <div class="link js-scroll fade-in-bottom"><a href="#books-sec">Books</a></div>
+            </div>            
+            <h3 class="js-scroll fade-in">Contact me <i id="phone" class="icon-mobile-device"></i></h3>                
+            <div id="contact-sec" class="contact">
+                <a href="https://www.youtube.com/channel/UCtkovyz4Ef5mPHA90AG-emQ" target="_blank" class="fab fa-youtube js-scroll fade-in-bottom"></a>                
+                <a href="mailto:david.chocholaty12@gmail.com" target="_blank" class="fas fa-envelope js-scroll fade-in-bottom"></a>                
+                <a href="https://www.linkedin.com/in/david-chocholatý-65524b213" target="_blank" class="fab fa-linkedin js-scroll fade-in-bottom"></a>     
+            </div>    
+            <div id="fst-coding-platforms" class="coding-platforms">
+                <a href="https://gitlab.com/david_chocholaty" target="_blank" class="js-scroll fade-in-bottom"><img src="./files/images/gitlab.png" alt="GitLab"></a>                
+                <a href="https://github.com/davidchocholaty" target="_blank" class="js-scroll fade-in-bottom"><i class="fab fa-github"></i><img src="./files/images/github.png" alt="GitHub"></a>                                
+            </div>
+            <div id="sec-coding-platforms" class="coding-platforms">
+                <a href="https://leetcode.com/dave_ch/" target="_blank" class="js-scroll fade-in-bottom"><img src="./files/images/leetcode.png" alt="LeetCode"></a>
+                <a href="https://codeforces.com/profile/dave_ch" target="_blank" class="js-scroll fade-in-bottom"><img src="./files/images/codeforces.png" alt="Codeforces"></a>                
+            </div>        
+            <h4 id="copyright" class="js-scroll fade-in"><i class="far fa-copyright"></i> 2021 David Chocholatý</h4>
+        </footer>
+
+        <!-- Import javascriptovych souboru -->
+        <script src="./files/js/menu.js"></script>                       
+        <script src="./files/js/scroll_animation.js"></script>  
+        <script src="./files/js/smooth_scroll.js"></script>
+    </body>
+</html>
+
+<!-- Konec souboru index.html -->
